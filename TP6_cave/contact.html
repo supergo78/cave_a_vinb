@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>contact</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet2_todo.css">
+</head>
+<body>
+	<div id="entete">
+		<img src="image/logo.png" alt="logo de l'entreprise">
+		<h1>SFCV</h1>
+		<h3>N°1 des caves à vins</h3>
+	</div>
+	<hr>
+
+	<div id="menu">
+		<ul>
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="produits.html">Produits</a></li>
+			<li><a href="services.html">services</a></li>
+		</ul>
+	</div>
+
+	<div id="bloc"> <!--demande de catalogue avec reception par email  -->
+		<h2>Demande de catalogue</h2>
+	<form method="get" name="demande" id="demande" action="mailto@email">
+	</div>
+
+		<p>
+			demandez nous vite votre catalogues gratuit ! 
+			<br> 
+			il vous sera livré dans les meilleurs délais.
+		</p>
+
+
+	    <p> <!-- demande d'information sur le visiteur  -->
+	      <label for="demande">quel est votre civilité</label>
+		  <select name="civilité" required>
+	    	<option style="display: none;" value=""></option>
+	        <option value="1">homme</option>
+	        <option value="2">femme</option>
+		  </select>
+    <p>
+    	<label for="nom">Nom</label> 
+    	<input type="text" name="nom" value="" placeholder="Ex. Debus" size="19" maxlength="30" required><br>
+        <label for="prenom">votre prenom</label> 
+        <input type="text" name="prenom" id="prenom" value="" placeholder="Ex. Hugo" size="16" maxlength="30" required>
+    </p>
+
+     <p>
+        <label>Adresse </label> 
+        <textarea name="adresse" id="adresse" cols="40" rows="3" required></textarea>
+    </p>
+
+    <p>
+      <label for="ville">Ville</label> 
+      <input type="text" name="ville" id="ville" placeholder="Ex. : Paris" size="15" maxlength="30" required>
+      <label for="postal">Code postal</label>
+      <input type="text" name="codepostal" id="postal" placeholder="Ex. : 78280" size="15" maxlength="30" required>
+    </p>
+
+    <p> <!-- demande d'adhesion a la newletter  -->
+    	<input type="checkbox" name="newsletter" value="oui">
+    	<label>je souhaite recevoir la newsletter </label> 
+    	<label>- couriel</label>
+    	<input type="text" name="courriel" placeholder="nom_prenom@gmail.com" size="20" maxlength="40" required>
+    </p>
+
+    <p> <!-- envoie des information  -->
+    	<input type="submit" value="Envoyer">
+    </p>
+</form>
+
+<p>
+	Ce site fait l'objet d'une declaration auprès de la Commission Nationale Informatique et Libertés (CNIL). Conformément aux disposition de la loi Informatiques et libertés du 6/01/1978 vous disposez d'un doit de modification, de rectification et d'opposition/suppressiondes données vous concernant, ce par simple demande à : info@sfcv.com <br>
+    <br>
+	N'hésitez pas à prendre contact avec l'équipe SFCV. Nous répondrons à toutes vos questions sur l'aménagement de votre cave ou le choix de votre armoir a vin. Tout les conseils de professionnels pour conserver vos meilleurs vin en toute sécurité pour le plaisir de les degustes en toute convivialité.
+</p>
+
+<div id="pied"> <!-- footer -->
+		<p>©SFCV - <a href="mention.txt">Mentions légales</a></p>
+
+		<p>L'abus d'alcool est dangereux pour la santer a consommer avec modération</p>
+	</div>
+</div>
+</body>
+</html>
